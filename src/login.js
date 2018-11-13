@@ -4,6 +4,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import React,{ Component } from 'react';
 import axios from 'axios';
+import LoginFooter from './loginfooter';
 
 class Login extends Component
 {
@@ -14,9 +15,11 @@ class Login extends Component
             username:'',
             password:''
         }
+        console.log("login page");
     }
     handleClick = event =>
     {
+        event.preventDefault();
         var url="https://api-d.klasbord.com/auth/login";
         var payload={
             "username":this.state.username,
@@ -52,7 +55,7 @@ class Login extends Component
                         />
                         <br/>
                         <TextField
-                        hintText="enter password"
+                        hintText="enter password" type="password"
                         floatingLabelText="password"
                         onChange ={ (event,newvalue) => this.setState({password:newvalue})}
                         />
@@ -61,6 +64,7 @@ class Login extends Component
                         onClick={(event)=>this.handleClick(event)}
                         />
                     </div>
+                    <LoginFooter />
                 </MuiThemeProvider>
                 </center>
             </div>
