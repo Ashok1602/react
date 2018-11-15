@@ -3,18 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
 //import Registration  from './registraion';
+//import Example from './methods';
+import Table from './table';
 import * as serviceWorker from './serviceWorker';
-import {  BrowserRouter as Router, Route, Switch , IndexRoute, hashHistory, browserHistory } from 'react-router-dom';
-import indexrouter from './indexroute';
+//import {  BrowserRouter as Router, Route, Switch , IndexRoute, hashHistory, browserHistory } from 'react-router-dom';
+//import indexrouter from './indexroute';
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 
-    
-
-
-
-
-ReactDOM.render( 
+/*ReactDOM.render( 
     <Router>
     <Switch>
         {
@@ -26,10 +23,10 @@ ReactDOM.render(
     </Switch>
     </Router>,
      document.getElementById('root')
-     );
+     );*/
  
 
-
+     ReactDOM.render(<Table />, document.getElementById('root'));
 
 
 
