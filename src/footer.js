@@ -10,10 +10,10 @@ class Footer extends Component
       return(
           <div>
               <strong>
-                 if you already have an account! please click below link. 
+                 if you already have an account! please click below button. 
               </strong>
               <br/>
-              <RaisedButton label="register now" primary={true} style={{marginTop:15}}
+              <RaisedButton label="login now" primary={true} style={{marginTop:15}}
               />
           </div>
       )

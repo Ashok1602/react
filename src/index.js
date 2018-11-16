@@ -4,10 +4,11 @@ import './index.css';
 //import App from './App';
 //import Registration  from './registraion';
 //import Example from './methods';
-import Table from './table';
+//import Table from './table';
 import * as serviceWorker from './serviceWorker';
 //import {  BrowserRouter as Router, Route, Switch , IndexRoute, hashHistory, browserHistory } from 'react-router-dom';
 //import indexrouter from './indexroute';
+import Weather from './weatherdata/weather';
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -26,7 +27,7 @@ import * as serviceWorker from './serviceWorker';
      );*/
  
 
-     ReactDOM.render(<Table />, document.getElementById('root'));
+ReactDOM.render(<Weather />, document.getElementById('root'));
 
 
 
